@@ -23,19 +23,23 @@ Setup
 
     // Web Root
     define('WEBBASEDIR', 'su.local');
+
     // database setting
     define('DB_HOST', 'localhost');
+
     define('DB_NAME', 'su');
+
     define('DB_USERNAME', 'root');
+
     define('DB_PASSWORD', 'root');
 
 2. Make sure csv files are stored in "data" folder and names are correct in index.php
 
-    define ('DATASOURCES',
-        serialize (
-            array('free411.com', 'gigaom.com', 'hubspot.com', 'leadertoleader.org', 'simplyexplained.com')
-        )
-    );
+        define ('DATASOURCES',
+            serialize (
+                array('free411.com', 'gigaom.com', 'hubspot.com', 'leadertoleader.org', 'simplyexplained.com')
+            )
+        );
 
 3. Create tables in "su" database
 
@@ -44,6 +48,7 @@ Setup
 4. Run the updater
 
     URL: http://[WEBROOT]/person/update/all
+
     e.g. http://su.local/person/update/all
 
     This reads csv files from data folder and populates the database
@@ -51,18 +56,24 @@ Setup
 5. View the report dashboard
 
     URL: http://[WEBROOT]/dashboard.html
+
     e.g. http://su.local/dashboard.html
 
 6. You can also view individual reports
 
     Top 10 Tags: http://su.local/person/display/top_ten_tags
+
     User by State: http://su.local/person/display/user_by_state
+
     User by Age: http://su.local/person/display/user_by_age
 
 Technology summary
 ------------------
 PHP
+
 MySQL
+
 d3.js
+
 jquery.js
 
