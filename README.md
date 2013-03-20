@@ -22,9 +22,11 @@ Setup
 1. Change config information in index.php
 
     // Web Root
+
     define('WEBBASEDIR', 'su.local');
 
     // database setting
+
     define('DB_HOST', 'localhost');
 
     define('DB_NAME', 'su');
