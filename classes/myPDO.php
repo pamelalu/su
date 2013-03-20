@@ -61,16 +61,16 @@ class myPDO {
         $sql = "insert into ".$table.' '.$fieldString.' values '.$dataString;
         //print $sql;
         try{
-            $this->pdo->beginTransaction();
+            //$this->pdo->beginTransaction();
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
             $lastID = $this->pdo->lastInsertId();
-            $this->pdo->commit();
+            //$this->pdo->commit();
             return $lastID;
         }
         catch (Exception $e)
         {
-            $this->pdo->rollback();
+            //$this->pdo->rollback();
             var_dump($e->getMessage());
         }
     }

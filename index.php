@@ -9,14 +9,14 @@
 
 // define constants
 define('BASEDIR', dirname (__FILE__));
-define('WEBBASEDIR', 'su-pamelastone.rhcloud.com');
+define('WEBBASEDIR', 'su.local');
 
 
 // database setting
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'su');
-define('DB_USERNAME', 'adminz1rapzs');
-define('DB_PASSWORD', '2feSDrt4jqgr');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'root');
 
 // csv file setting
 // @todo: write a function that reads every file in the urls folder

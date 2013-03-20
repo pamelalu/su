@@ -21,10 +21,6 @@ class person {
 
     }
 
-    public function get($id = 'all')
-    {
-
-    }
 
     /**
      * @param array $line
