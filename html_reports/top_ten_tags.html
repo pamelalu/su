@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Ten Tags</title>
+    <link type="text/css" href="/css/csvtable.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.csvToTable.js" type="text/javascript"></script>
+    <script src="/js/jquery.tablesorter.dev.js" type="text/javascript"></script>
+</head>
+<body>
+
+<h1>Top Ten Tags</h1>
+<p>Data Source: <a href="/data/top_ten_tags.csv">top_ten_tags.csv</a></p>
+    <div id="CSVTable"></div>
+
+            <script>
+            $(function() {
+                $('#CSVTable').CSVToTable('/data/top_ten_tags.csv');
+            });
+    </script>
+
+</body>
+</html>
+
